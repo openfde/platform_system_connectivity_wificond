@@ -104,6 +104,10 @@ void OnBinderReadReady(int fd) {
 }
 
 int main(int argc, char** argv) {
+  if (true) {
+    LOG(WARNING) << "wificond do nothing";
+    return 0;
+  }
   android::base::InitLogging(argv, android::base::LogdLogger(android::base::SYSTEM));
   LOG(INFO) << "wificond is starting up...";
 
